@@ -24,6 +24,9 @@ int main(){
         if(arr[i] == target && flag == 0){
             first = i;
             flag = 1;
+            if(arr[first + 1] != target){
+                flag = 0;
+            }
         }
         if(arr[i] == target && flag == 1){
             if(arr[i+1] != target){
